@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>CatFree3D</title>
+		<!-- <link rel="icon" type="image/x-icon" href="/imgs/nope1.png"> -->
+		<!-- Bootstrap core CSS -->
+		
+		<!-- Custom styles for this template -->
+		<link href="css/academicons.css" rel="stylesheet">
+		<link rel="stylesheet" href="/dics.original.css">
+		<script src="/dics.original.js"></script>
+		<link href="css/footer.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="../src/original/dics.original.css">
+		<link rel='stylesheet'
+         href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    	<script src="../src/original/dics.original.js"></script>
+		<link
+		  rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+		  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+		  crossorigin="anonymous">
+		<!-- Custom fonts for this template -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', domReady);
+	
+			function domReady() {
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[0],
+					textPosition: 'top'
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[1],
+					hideTexts: true,
+					textPosition: 'center'
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[2]
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[3],
+					linesOrientation: 'vertical',
+					textPosition: 'left',
+					arrayBackgroundColorText: ['#000000', '#FFFFFF'],
+					arrayColorText: ['#FFFFFF', '#000000'],
+					linesColor: 'rgb(0,0,0)'
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[4],
+					linesOrientation: 'vertical',
+					textPosition: 'right'
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[5],
+					textPosition: 'bottom'
+				});
+	
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[6],
+					filters: ['blur(3px)', 'grayscale(1)', 'sepia(1)', 'saturate(3)']
+				});
+				new Dics({
+					container: document.querySelectorAll('.b-dics')[7],
+					rotate: '45deg'
+				});
+	
+			}
+		</script>
+		
+		
+	</head>
+<body>
+
+<main role="main" class="container", style="max-width: 900px;">
+	    <h1 class="title is-3 publication-title">CatFree3D: Category-agnostic 3D Object Detection with Diffusion</h1>
+	<!-- &#x1F6AB &#129306 &#128581 &#128581;&#8205;&#9792;&#65039 &#x1F6AB-->
+	<div class="col text-center">
+	    <p class="authors">
+		  <a href="https://scholar.google.com/citations?user=IVfbqkgAAAAJ&hl=en">Wenjing Bian</a><sup>1</sup>,
+	      <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en">Zirui Wang</a><sup>1</sup>,
+	      <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>2</sup><br>
+	      <sup>1</sup><a href="https://www.robots.ox.ac.uk/ActiveVision/"> Active Vision Lab</a>,
+		  <sup>2</sup><a href="https://www.robots.ox.ac.uk/~vgg/"> Visual Geometry Group</a><br>
+	      University of Oxford<br>
+	    </p>
+	</div>
+	<div class="col text-center", style="padding: 20px 0px;">
+	    <a class="btn btn-dark", href="" role="button">Arxiv</a>
+		<a class="btn btn-dark" href="#bibtex" role="button">Bibtex</a>
+	</div>
+	
+	</div>
+	<h2 class="title is-4">Abstract</h2>
+	  <p>
+	    Image-based 3D object detection is widely employed in applications such as autonomous vehicles and robotics, yet current systems struggle with generalisation due to complex problem setup and limited training data. 
+We introduce a novel pipeline that decouples 3D detection from 2D detection and depth prediction, using a diffusion-based approach to improve accuracy and support category-agnostic detection. 
+Additionally, we introduce the Normalised Hungarian Distance (NHD) metric for an accurate evaluation of 3D detection results, addressing the limitations of traditional IoU and GIoU metrics. 
+Experimental results demonstrate that our method achieves state-of-the-art accuracy and strong generalisation across various object categories and datasets.
+	  </p>
+	<h2 class="title is-4">Method Overview</h2>
+	<div style="padding: 20px 0px;", class="center">
+	<img src="imgs/method_overview.png" alt="Model Overview", class="center">
+	</div>
+	
+	<h2 class="title is-4">Prediction Results</h2>
+	 <p>
+		SUN RGB-D Prediction Results
+	 </p>
+	
+	<h2 class="title is-4">Metric: Normalised Hungarian Distance</h2>
+<h2 class="title is-4">BibTeX</h2>
+<code class="codebox" id="bibtex"><pre>
+@article{bian2024catfree3d,
+  title={CatFree3D: Category-agnostic 3D Object Detection with Diffusion},
+  author={Bian, Wenjing and Wang, Zirui and Vedaldi, Andrea},
+  journal={},
+  year={2024}
+}
+
+</main>
+</body>
+	
+</html>
