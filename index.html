@@ -114,19 +114,56 @@ Experimental results demonstrate that our method achieves state-of-the-art accur
 	
 	<h2 class="title is-4">Prediction Results</h2>
 	 <p>
-		SUN RGB-D Prediction Results
-	 </p>
+		<b>Omni3D Prediction Results</b> <br>
+		Our method can predict 3D bounding boxes with high accuracy on object categories seen (left) and unseen (right) during training.
+		
+	 <p>
+	<div class="row">
+		<div style="padding: 20px 20px;", class="column">
+		<img src="imgs/main.png" alt="Omni3D Results", class="center">
+		</div>
+		<div style="padding: 20px 20px;", class="column">
+		<img src="imgs/unseen.png" alt="Omni3D Results", class="center">
+		</div>
+	</div>
+	
+	<p>
+		<b>COCO Prediction Results</b> <br>
+		Our method can generalise well to in-the-wild objects on the COCO dataset.
+	</p>
+	<div style="padding: 20px 0px;", class="center">
+	<img src="imgs/coco.png" alt="COCO Results", class="center">
+	<img src="imgs/coco2.png" alt="COCO Results", class="center">
+	</div>
+	<h2 class="title is-4">Application for Data Annotation</h2>
+	<p>
+		Our method can be used for data annotation in 3D object detection tasks.
+		In a conventional 3D box annotation pipeline, annotators typically need to
+		adjust a randomly initialised 3D box across nine degrees of freedom (rotation, translation, and size) until it appears correct in every view.
+		This process is time-consuming and labour-intensive. Our model streamlines this workflow by reducing the task to a single degree of
+		freedom, depth, significantly accelerating the dataset labelling process.
+	</p>
+	<div style="padding: 20px 0px;", class="center">
+	<img src="imgs/annotation.png" alt="Data Annotation", class="center">
+	</div>
 	
 	<h2 class="title is-4">Metric: Normalised Hungarian Distance</h2>
+	<p>
+		We propose a new metric, Normalised Hungarian Distance (NHD), 
+		to provide a more precise evaluation for 3D object detection.
+	</p>
+	<div style="padding: 20px 0px;", class="center">
+	<img src="imgs/simulate.png" alt="NHD Metric", class="center">
+	</div>
 <h2 class="title is-4">BibTeX</h2>
-<code class="codebox" id="bibtex"><pre>
+<pre>
 @article{bian2024catfree3d,
   title={CatFree3D: Category-agnostic 3D Object Detection with Diffusion},
   author={Bian, Wenjing and Wang, Zirui and Vedaldi, Andrea},
   journal={},
   year={2024}
 }
-
+</pre>
 </main>
 </body>
 	
